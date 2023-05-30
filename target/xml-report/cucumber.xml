@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.43">
-    <testcase classname="kullanicinin amazon sayfasına gitmesi" name="kullanici amazonda urunler aratir" time="0.05">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici amazon sayfasina gider......................................undefined
-And iphone icin arama yapar.................................................skipped
-Then sonuclarin Iphone icerdigini test eder.................................skipped
-Given kullanici amazon sayfasina gider......................................skipped
-And tea pot icin arama yapar................................................skipped
-Then sonuclarin tea pot icerdigini test eder................................skipped
-Given kullanici amazon sayfasina gider......................................skipped
-And flower icin arama yapar.................................................skipped
-Then sonuclarin flower icerdigini test eder.................................skipped
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="77.319">
+    <testcase classname="Multiple products are searched on the site" name="searches for products listed on Trendyol" time="30.69">
+        <system-out><![CDATA[When User goes to Trendyol page.............................................passed
+Then The customer searches Trendyol for "dyson".............................passed
+Then Trendyol tests that search results contain "dyson".....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Multiple products are searched on the site" name="searches for products listed on Trendyol 2" time="25.725">
+        <system-out><![CDATA[When User goes to Trendyol page.............................................passed
+Then The customer searches Trendyol for "robot".............................passed
+Then Trendyol tests that search results contain "robot".....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Multiple products are searched on the site" name="searches for products listed on Trendyol 3" time="20.241">
+        <system-out><![CDATA[When User goes to Trendyol page.............................................passed
+Then The customer searches Trendyol for "BİSSELL"...........................passed
+Then Trendyol tests that search results contain "BİSSELL"...................passed
+]]></system-out>
     </testcase>
 </testsuite>

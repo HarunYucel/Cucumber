@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.function.Function;
 
 
-public class Reuseable {
+public class Reusable {
     static WebDriver driver;
 
     public static void jsClick(WebElement element){
@@ -77,7 +77,7 @@ public class Reuseable {
 
     //   HARD WAIT WITH THREAD.SLEEP
 //   waitFor(5);  => waits for 5 second
-    public static void bekle(int saniye) {
+    public static void wait(int saniye) {
         try {
             Thread.sleep(saniye * 1000);
         } catch (InterruptedException e) {
@@ -114,7 +114,7 @@ public class Reuseable {
                 element.click();
                 return;
             } catch (WebDriverException e) {
-                bekle(1);
+                wait(1);
             }
         }
 
